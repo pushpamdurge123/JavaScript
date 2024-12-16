@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+let word = "Hello@";
+
+/*let word = prompt("Enter your password:");
+
+for(i = 0; i < word.length; i++){
+
+    console.log(word[i]);
+
+}*/
+
+for( i of word){
+    if( i === "@"){
+
+        console.log("invalid password!!");
+        break;
+
+    }
+    else{
+
+        console.log("good password!!");
+
+    }
+}
+    </script>
+</body>
+</html>

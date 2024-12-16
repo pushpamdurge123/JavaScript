@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Please read the below string and retrieve the password.
+        //Input --> P#A#S#S#W#O#R#D
+        //Output --> PASSWORD
+
+        let hashedPassword = "P#A#S#S#W#O#R#D";
+        let password = "";
+
+        for( let i=0; i < hashedPassword.length; i++){
+            if( hashedPassword[i] !== "#") // P !== "#" -->true
+            {
+                password = password + hashedPassword[i];  //PASSWORD
+            }
+        }
+        console.log(password);
+
+    </script>
+</body>
+</html>

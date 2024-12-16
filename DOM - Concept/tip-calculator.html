@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link 
+    rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" 
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" 
+    crossorigin="anonymous">
+    <link rel="stylesheet" href="tip-calculator.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="main-cont">
+
+        <h1>Tip Calculator</h1> 
+
+        <br><br>
+
+        <input id="billAmount" class="form-control w-25" type="text" placeholder="Please Enter Bill Amount">
+
+        <br><br>
+
+        <input id="tipAmount" class="form-control w-25" type="text" placeholder="Please Enter Tip Percent">
+
+        <br><br>
+
+        <input id="showTip" class="form-control w-25" type="text">
+
+        <br><br>
+
+        <input id="showTotal" class="form-control w-25" type="text">
+
+        <br><br>
+
+        <button onclick="onCheckTotalAmount()" class="btn btn-primary">Calculate</button>
+
+        <br>
+
+        <p id="errorMsg" class="text-danger"></p>
+        
+
+    </div>
+
+    <script src="tip-calculator.js"></script>
+</body>
+</html>

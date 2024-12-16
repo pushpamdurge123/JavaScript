@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Javascript</h1>
+    <script>
+        /*Implicit conversion to String:- When a number is added to the string,Javascript converts
+        the number to a string before concatenation.
+        */
+        let result="3" + 2;
+        console.log(result);  //32
+
+        let a="3" + true;
+        console.log(a);  //3true
+
+        let b="3" + undefined;
+        console.log(b);  //3undefined
+
+        let c="3" + null;
+        console.log(c);   //3null
+
+
+        /*Implicit conversion to number:- Numeric string used with "-" results a number type.*/
+        let d="4" - "2";   //numeric string
+        console.log(d);  //2
+
+        let e="4" - 2;
+        console.log(e);  //2
+
+        let f="4" * 2;
+        console.log(f);  //8
+
+        let g="4" / 2;
+        console.log(g);  //2
+    </script>
+</body>
+</html>

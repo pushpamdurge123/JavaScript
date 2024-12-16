@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //Please read the below string and retrieve the password.
+        //Input --> P@A$S#S%W*O!R&D
+        //Output --> PASSWORD
+
+        //let hashedPassword = "P@a$S#s%W*o!R&d";
+        //const clearedString = hashedPassword.replace(/[^a-zA-Z]/g, "");
+        //const newClearedString= clearedString.toLocaleLowerCase();
+        //console.log(newClearedString);
+
+        //odd index -->1 3 5 7 9 11 13 
+        //values -->@ $ # % * ! &
+
+        let word = prompt("Please Use any cases and special characters between two letters.ex: h#E$l@");
+
+        let result = "";
+
+        for( i=0; i < word.length; i++){
+            
+            if(i % 2 === 0){
+                result = result + word[i];
+            }
+        }
+        console.log(result);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let word = prompt("Enter any word:-");//Hello
+        
+        let result = "";
+
+        for(let i=0; i < word.length; i++){
+
+            result = result + word[i] + "-";
+
+        }
+        console.log(result.slice( 0, result.length - 1 ));
+
+    </script>
+</body>
+</html>

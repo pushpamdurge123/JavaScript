@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr = ["Pushpam", 26, "Nagpur", "Zingabai Takli", 440030, "Database Engineer"];
+
+        let person = {
+            Name : "Pushpam",
+            Age : 26,
+            isActive : false,
+            status : undefined,
+            hobbies : ["singing", "Book reading", "Travelling",{indoor : "Playstation", outdoor: "cricket"}],
+            Accademics : {
+                SSC : 2006,
+                HSC : 2008,
+                graduation : {
+                    BTech : ["2012","2010","2013"]
+                }
+            },
+            isWorking : function(){
+                console.log("Not Working");
+            }
+
+        } 
+
+        let hobbies = person.Accademics.graduation.BTech[[2]];
+
+        console.log(hobbies);
+    </script>
+</body>
+</html>

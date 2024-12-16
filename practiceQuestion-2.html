@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+//Q.2. Read the number N from user and takes N numbers of input every input should have 5 digit number.
+//and console the sum of all the even numbers.
+
+// Read the number N from the user
+let N = parseInt(prompt("Enter the number of 5-digit numbers you will input: "));
+let sumOfEvens = 0;  // Initialize sum for even numbers
+
+// Check if N is positive
+if (N > 0) {
+    // Loop N times to get N inputs
+    for (let i = 1; i <= N; i++) {
+        let number = parseInt(prompt("Enter 5-digit number ${i}: "));
+
+        // Check if the number is a 5-digit number
+        if (number >= 10000 && number <= 99999) {
+
+            // Check if the number is even
+            if (number % 2 === 0) {
+                sumOfEvens += number;  // Add even number to sum
+            }
+
+        } else {
+            console.log("Please enter a valid 5-digit number.");
+            i--;  // Decrease the counter to re-take the input for that iteration
+        }
+    }
+
+    // Output the sum of all even numbers
+    console.log("Sum of all even numbers is: " + sumOfEvens);
+
+} else {
+    console.log("Please enter a valid positive number for N.");
+}
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let password = prompt("Enter the password use #,@,$ in your password.");
+
+        let isHashAvi = password.indexOf("#");
+        let isAtAvi = password.indexOf("@");
+        let isDollarAvi = password.indexOf("$");
+
+        if(isHashAvi !== -1 || isAtAvi !== -1 || isDollarAvi !== -1){
+            console.log("Password is strong!!")
+        }
+        else{
+            console.log("Weak password!!!")
+        }
+    </script>
+</body>
+</html>

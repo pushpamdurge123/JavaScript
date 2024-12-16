@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+//Q.1. Read any positive number "N" from user and console all the prime numbers from 1 to N.
+//Ex: 10--.2,3,5,7
+
+let N = parseInt(prompt("Enter any positive number: "));
+
+if (N > 0) {
+    console.log(`Prime numbers between 1 and ${N} are:`);
+
+    for (let num = 2; num <= N; num++) {
+        let isPrime = true; 
+
+        for (let i = 2; i < num; i++) {
+            if (num % i === 0) {  
+                isPrime = false;
+                break;
+            }
+        }
+
+        
+        if (isPrime) {
+            console.log(num);
+        }
+    }
+} else {
+    console.log("Please enter a positive number.");
+}
+
+    </script>
+</body>
+</html>

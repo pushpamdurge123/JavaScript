@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //index-of method:- 
+        let myArr = ["javascript", "html", "css", "bootstrap"];
+
+        let newArr = myArr.indexOf("css");
+
+        console.log(newArr);
+
+
+        //find() method:- by using function we find the index of any element;
+
+        function findIndex(value, myArr){
+
+            let count = 0;
+
+            for(each of myArr){
+
+                if(each === value){
+
+                    return count;
+
+                }
+                count += 1; 
+            }
+        }
+
+        let myIndex = findIndex("css", myArr);
+
+        console.log(myIndex);
+        
+
+    </script>
+</body>
+</html>

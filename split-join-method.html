@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        /*let dob = prompt("please enter your dob and use "/" for providing dob");
+
+        let dobArr = dob.split("/");
+
+        let dob1 = dobArr.join("-")
+
+        console.log(dob1);*/
+
+        let numbers = prompt("Please enter ',' separated numbers");
+
+        let newArr = numbers.split(",");
+
+        let numArr = [];
+
+        for(each of newArr){
+            
+            let num = parseInt(each);
+
+            numArr.push(num);
+
+        }
+        console.log(numArr);
+
+        let str = numArr.join("$");
+
+        console.log(str);
+    </script>
+</body>
+</html>

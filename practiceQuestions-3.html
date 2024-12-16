@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+//Q.3.:Read the password from user and check the length should be greater than or equal to 8 
+//and it has any special character in it if all the conditions satisfies console "good password"
+//or else "Bad password".
+
+// Read the password from the user
+let password = prompt("Enter your password: ");
+let hasSpecialCharacter = false;
+let specialCharacters = "!@#$%^&*()_+[]{}|;:',.<>?/";
+
+// Check if the length of the password is greater than or equal to 8
+if (password.length >= 8) {
+
+    // Loop through each character in the password
+    for (let i = 0; i < password.length; i++) {
+        // Check if the character is a special character
+        if (specialCharacters.includes(password[i])) {
+            hasSpecialCharacter = true;
+            break;
+        }
+    }
+
+    // Check if both conditions are satisfied
+    if (hasSpecialCharacter) {
+        console.log("Good password");
+    } else {
+        console.log("Bad password: No special character found.");
+    }
+
+} else {
+    console.log("Bad password: Password is too short.");
+}
+
+
+</script>
+</body>
+</html>

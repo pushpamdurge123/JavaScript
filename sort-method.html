@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //the sort() method sorts the items of an array in an ascending or descending order or not.
+
+        let cityArray =["Nagpur", "Amravati", "Badnera", "Deheradun", "Chattisgarh"];
+
+        cityArray.sort();
+
+        console.log(cityArray);
+
+        let numberArray = [112,3,45,67,89,26,55,79,90,100];
+
+        numberArray.sort();
+
+        console.log(numberArray);
+
+        //using test function
+
+        function ascending(a, b){
+
+            if(a < b){
+
+                return 1;
+
+            }
+            else{
+                return -1
+            }
+
+        }
+        numberArray.sort(ascending);
+
+        console.log(numberArray);
+
+    </script>
+</body>
+</html>
